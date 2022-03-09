@@ -19,5 +19,11 @@
     "postcss": "^8.4.8",
     "tailwindcss": "^3.0.23",
     "vite": "^2.8.0"
-  }
+  },
+  "workspaces": {
+    "nohoist": [
+        "@tailwindcss/forms",
+        "@tailwindcss/forms/**"
+    ]
+}
 }
