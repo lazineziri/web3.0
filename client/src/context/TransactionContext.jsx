@@ -19,7 +19,7 @@ export const TransactionProvider = ({children }) =>{
   const handleChange = (e, name) => {
     setFormData((prevState) => ({ ...prevState, [name]: e.target.value }));
   };
-  const [isLoading, setisLoading] = useState(faclse);
+  const [isLoading, setisLoading] = useState(false);
   
   const checkIfWalletIsConnect = async () => {
     try {
@@ -54,7 +54,7 @@ const  sendTransaction = async ()=>{
     const transactionsContract = getEthereumContract();
     const parsedAmount = ethers.utils.parseEther(amount);
     await ethereum.request({
-      method:'eth_sendTransacion',
+      method:'eth_sendTransaction',
       params:[{
         from: currentAccount,
         to: addressTo,
