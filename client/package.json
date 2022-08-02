@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/typography": "^0.5.4",
     "ethers": "^5.5.4",
     "react": "^17.0.2",
